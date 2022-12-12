@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"/home/meeshkan-abel/Documents/UnrealProjects/WarehouseWreckage/Content/StarterContent/Props/SM_Lamp_Wall.uasset",
+				"/home/meeshkan-abel/Documents/UnrealProjects/WarehouseWreckage/Content/StarterContent/Maps/BP_Projectile.uasset",
+				"/home/meeshkan-abel/Documents/UnrealProjects/WarehouseWreckage/Content/StarterContent/Maps/Minimal_Default.umap",
+				"/home/meeshkan-abel/Documents/UnrealProjects/WarehouseWreckage/Content/MainMap.umap",
+				"/home/meeshkan-abel/Documents/UnrealProjects/WarehouseWreckage/Content/BP_Barrel.uasset",
+				"/home/meeshkan-abel/Documents/UnrealProjects/WarehouseWreckage/Content/IndustryPropsPack6/Meshes/SM_Barrel01.uasset"
+			]
+		}
+	]
+}

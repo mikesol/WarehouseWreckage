@@ -1,0 +1,115 @@
+﻿Log file open, 12/11/22 16:11:39
+LogInit: Build: ++UE5+Release-5.1-CL-0
+LogInit: Engine Version: 5.1.0-0+++UE5+Release-5.1
+LogInit: Compatible Engine Version: 5.1.0-0+++UE5+Release-5.1
+LogInit: Net CL: 0
+LogInit: OS: Ubuntu 22.04.1 LTS (5.15.0-56-generic), CPU: Intel(R) Core(TM) i9-7900X CPU @ 3.30GHz, GPU: NVIDIA GeForce GTX 1080 Ti (NVIDIA UNIX x86_64 Kernel Module  525.60.11  Wed Nov 23 23:04:03 UTC 2022)
+LogInit: Compiled (64-bit): Dec 10 2022 22:56:05
+LogInit: Compiled with Clang: 13.0.1 
+LogInit: Build Configuration: Shipping
+LogInit: Branch Name: ++UE5+Release-5.1
+LogInit: Command Line:  -Abslog="/home/meeshkan-abel/Documents/UnrealProjects/WarehouseWreckage/Saved/Logs/WarehouseWreckage-CRC.log" -Unattended "/home/meeshkan-abel/Documents/UnrealProjects/WarehouseWreckage/Saved/Crashes/stallinfo-WarehouseWreckage-pid-20082-D9564F05648E454EA052E39F11C5A2C4/"
+LogInit: Base Directory: /home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Binaries/Linux/
+LogInit: Allocator: Mimalloc
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 100000 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+LogConfig: Applying CVar settings from Section [ConsoleVariables] File [Engine]
+[2022.12.11-14.11.39:482][  0]LogInit: Unix hardware info:
+[2022.12.11-14.11.39:482][  0]LogInit:  - we are the first instance of this executable
+[2022.12.11-14.11.39:482][  0]LogInit:  - this process' id (pid) is 20823, parent process' id (ppid) is 20082
+[2022.12.11-14.11.39:482][  0]LogInit:  - we are not running under debugger
+[2022.12.11-14.11.39:482][  0]LogInit:  - machine network name is 'Abel'
+[2022.12.11-14.11.39:483][  0]LogInit:  - user name is 'meeshkanabel' (meeshkanabel)
+[2022.12.11-14.11.39:483][  0]LogInit:  - we're logged in locally
+[2022.12.11-14.11.39:483][  0]LogInit:  - we're running with rendering
+[2022.12.11-14.11.39:483][  0]LogInit:  - CPU: GenuineIntel 'Intel(R) Core(TM) i9-7900X CPU @ 3.30GHz' (signature: 0x50654)
+[2022.12.11-14.11.39:483][  0]LogInit:  - Number of physical cores available for the process: 10
+[2022.12.11-14.11.39:483][  0]LogInit:  - Number of logical cores available for the process: 20
+[2022.12.11-14.11.39:483][  0]LogInit:  - Cache line size: 64
+[2022.12.11-14.11.39:483][  0]LogInit:  - GPU Brand Info: NVIDIA GeForce GTX 1080 Ti (NVIDIA UNIX x86_64 Kernel Module  525.60.11  Wed Nov 23 23:04:03 UTC 2022)
+[2022.12.11-14.11.39:483][  0]LogInit:  - Memory allocator used: Mimalloc
+[2022.12.11-14.11.39:483][  0]LogInit:  - This binary is optimized with LTO: no, PGO: no, instrumented for PGO data collection: no
+[2022.12.11-14.11.39:483][  0]LogInit:  - This is an internal build.
+[2022.12.11-14.11.39:483][  0]LogCore: Skipped benchmarking clocks because the engine is running in a standalone program mode - CLOCK_MONOTONIC will be used.
+[2022.12.11-14.11.39:483][  0]LogInit: Unix-specific commandline switches:
+[2022.12.11-14.11.39:483][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
+[2022.12.11-14.11.39:483][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
+[2022.12.11-14.11.39:483][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
+[2022.12.11-14.11.39:483][  0]LogInit:  -filemapcachesize=NUMBER - set the size for case-sensitive file mapping cache
+[2022.12.11-14.11.39:483][  0]LogInit:  -useksm - uses kernel same-page mapping (KSM) for mapped memory (OFF)
+[2022.12.11-14.11.39:483][  0]LogInit:  -ksmmergeall - marks all mmap'd memory pages suitable for KSM (OFF)
+[2022.12.11-14.11.39:483][  0]LogInit:  -preloadmodulesymbols - Loads the main module symbols file into memory (OFF)
+[2022.12.11-14.11.39:483][  0]LogInit:  -sigdfl=SIGNAL - Allows a specific signal to be set to its default handler rather then ignoring the signal
+[2022.12.11-14.11.39:483][  0]LogInit:  -crashhandlerstacksize - Allows setting crash handler stack sizes (204800)
+[2022.12.11-14.11.39:483][  0]LogInit:  -noexclusivelockonwrite - disables marking files created by the engine as exclusive locked while the engine has them opened
+[2022.12.11-14.11.39:483][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
+[2022.12.11-14.11.39:483][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
+[2022.12.11-14.11.39:483][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
+[2022.12.11-14.11.39:483][  0]LogInit:  - Physical RAM available (not considering process quota): 63 GB (63989 MB, 65524760 KB, 67097354240 bytes)
+[2022.12.11-14.11.39:483][  0]LogInit:  - VirtualMemoryAllocator pools will grow at scale 1.4
+[2022.12.11-14.11.39:483][  0]LogInit:  - MemoryRangeDecommit() will be a no-op (re-run with -vmapoolevict to change)
+[2022.12.11-14.11.39:483][  0]LogInit:  - PageSize 4096
+[2022.12.11-14.11.39:483][  0]LogInit:  - BinnedPageSize 65536
+[2022.12.11-14.11.39:486][  0]LogUObjectArray: 419 objects as part of root set at end of initial load.
+[2022.12.11-14.11.39:487][  0]LogUObjectAllocator: 89024 out of 0 bytes used by permanent object pool.
+[2022.12.11-14.11.39:487][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2022.12.11-14.11.39:487][  0]LogInit: Using OS detected language (en-US).
+[2022.12.11-14.11.39:487][  0]LogInit: Using OS detected locale (en-US).
+[2022.12.11-14.11.39:487][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so 'en' will be used for the language.
+[2022.12.11-14.11.39:529][  0]LogInit: Using OS detected language (en-US).
+[2022.12.11-14.11.39:530][  0]LogInit: Using OS detected locale (en-US).
+[2022.12.11-14.11.39:530][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the language.
+[2022.12.11-14.11.39:530][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the locale.
+[2022.12.11-14.11.39:530][  0]LogPackageLocalizationCache: Processed 2 localized package path(s) for 1 prioritized culture(s) in 0.000028 seconds
+[2022.12.11-14.11.39:530][  0]CrashReportCoreLog: CrashReportClientVersion=1.0
+[2022.12.11-14.11.39:530][  0]CrashReportCoreLog: CrashReportReceiver disabled
+[2022.12.11-14.11.39:530][  0]CrashReportCoreLog: DataRouterUrl: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data
+[2022.12.11-14.11.39:531][  0]CrashReportCoreLog: Initial state = Unknown UploadState value
+[2022.12.11-14.11.39:531][  0]CrashReportCoreLog: Initial state = Unknown UploadState value
+[2022.12.11-14.11.39:532][  0]LogCrashDebugHelper: DepotName: //UE5/Release-5.1
+[2022.12.11-14.11.39:532][  0]LogCrashDebugHelper: BuiltFromCL: 0
+[2022.12.11-14.11.39:532][  0]LogCrashDebugHelper: EngineVersion: 5.1.0-0+++UE5+Release-5.1
+[2022.12.11-14.11.39:532][  0]LogCrashDebugHelper: BuildVersion: ++UE5+Release-5.1-CL-0
+[2022.12.11-14.11.40:504][  0]CrashReportCoreLog: Got 4 pending files to upload from 'stallinfo-WarehouseWreckage-pid-20082-D9564F05648E454EA052E39F11C5A2C4'
+[2022.12.11-14.11.40:504][  0]CrashReportCoreLog: State change from Ready to SendingFiles
+[2022.12.11-14.11.40:504][  0]CrashReportCoreLog: CompressAndSendData have 4 pending files
+[2022.12.11-14.11.40:504][  0]CrashReportCoreLog: CompressAndSendData compressing 133 bytes ('/home/meeshkan-abel/Documents/UnrealProjects/WarehouseWreckage/Saved/Crashes/stallinfo-WarehouseWreckage-pid-20082-D9564F05648E454EA052E39F11C5A2C4/CrashReportClient.ini')
+[2022.12.11-14.11.40:504][  0]CrashReportCoreLog: CompressAndSendData compressing 9635 bytes ('/home/meeshkan-abel/Documents/UnrealProjects/WarehouseWreckage/Saved/Crashes/stallinfo-WarehouseWreckage-pid-20082-D9564F05648E454EA052E39F11C5A2C4/Diagnostics.txt')
+[2022.12.11-14.11.40:504][  0]CrashReportCoreLog: CompressAndSendData compressing 39159 bytes ('/home/meeshkan-abel/Documents/UnrealProjects/WarehouseWreckage/Saved/Crashes/stallinfo-WarehouseWreckage-pid-20082-D9564F05648E454EA052E39F11C5A2C4/CrashContext.runtime-xml')
+[2022.12.11-14.11.40:504][  0]CrashReportCoreLog: CompressAndSendData compressing 265986 bytes ('/home/meeshkan-abel/Documents/UnrealProjects/WarehouseWreckage/Saved/Crashes/stallinfo-WarehouseWreckage-pid-20082-D9564F05648E454EA052E39F11C5A2C4/WarehouseWreckage.log')
+[2022.12.11-14.11.40:532][  0]LogInit: Using libcurl 7.83.1
+[2022.12.11-14.11.40:532][  0]LogInit:  - built for Linux
+[2022.12.11-14.11.40:532][  0]LogInit:  - supports SSL with OpenSSL/1.1.1n
+[2022.12.11-14.11.40:532][  0]LogInit:  - supports HTTP deflate (compression) using libz 1.2.12
+[2022.12.11-14.11.40:532][  0]LogInit:  - other features:
+[2022.12.11-14.11.40:532][  0]LogInit:      CURL_VERSION_SSL
+[2022.12.11-14.11.40:532][  0]LogInit:      CURL_VERSION_LIBZ
+[2022.12.11-14.11.40:532][  0]LogInit:      CURL_VERSION_IPV6
+[2022.12.11-14.11.40:532][  0]LogInit:      CURL_VERSION_ASYNCHDNS
+[2022.12.11-14.11.40:532][  0]LogInit:      CURL_VERSION_LARGEFILE
+[2022.12.11-14.11.40:532][  0]LogInit:  CurlRequestOptions (configurable via config and command line):
+[2022.12.11-14.11.40:532][  0]LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+[2022.12.11-14.11.40:532][  0]LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+[2022.12.11-14.11.40:532][  0]LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+[2022.12.11-14.11.40:532][  0]LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+[2022.12.11-14.11.40:532][  0]LogInit:  - LocalHostAddr = Default
+[2022.12.11-14.11.40:532][  0]LogInit:  - BufferSize = 65536
+[2022.12.11-14.11.40:533][  0]CrashReportCoreLog: Sending HTTP request: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?AppID=CrashReporter&AppVersion=5.1.0-0%2B%2B%2BUE5%2BRelease-5.1&AppEnvironment=Release&UploadType=crashreports&UserID=d6cd6dd405344f65864c53433e1fb240-000003e8%7C%7Cd6cd6dd405344f65864c53433e1fb240
+[2022.12.11-14.11.42:241][  0]CrashReportCoreLog: OnProcessRequestComplete(), State=SendingFiles bSucceeded=1
+[2022.12.11-14.11.42:241][  0]CrashReportCoreLog: State change from SendingFiles to SendingFiles
+[2022.12.11-14.11.42:241][  0]CrashReportCoreLog: All uploads done
+[2022.12.11-14.11.42:241][  0]CrashReportCoreLog: State change from SendingFiles to Finished
+[2022.12.11-14.11.42:541][  0]CrashReportCoreLog: Final state (Receiver) = Finished
+[2022.12.11-14.11.42:541][  0]CrashReportCoreLog: Final state (Receiver) = Unknown UploadState value
+[2022.12.11-14.11.42:541][  0]LogCore: Engine exit requested (reason: CrashReportClientApp RequestExit)
+[2022.12.11-14.11.42:541][  0]LogExit: Preparing to exit.
+[2022.12.11-14.11.42:542][  0]LogExit: Object subsystem successfully closed.
+[2022.12.11-14.11.42:543][  0]LogModuleManager: Shutting down and abandoning module HTTP (12)
+[2022.12.11-14.11.42:555][  0]LogModuleManager: Shutting down and abandoning module SSL (11)
+[2022.12.11-14.11.42:556][  0]LogModuleManager: Shutting down and abandoning module CrashDebugHelper (8)
+[2022.12.11-14.11.42:556][  0]LogModuleManager: Shutting down and abandoning module CoreUObject (6)
+[2022.12.11-14.11.42:556][  0]LogModuleManager: Shutting down and abandoning module PakFile (4)
+[2022.12.11-14.11.42:556][  0]LogModuleManager: Shutting down and abandoning module RSA (3)
+[2022.12.11-14.11.42:557][  0]LogExit: Exiting.
+[2022.12.11-14.11.42:568][  0]Log file closed, 12/11/22 16:11:42

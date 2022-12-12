@@ -1,0 +1,57 @@
+Generating report for minidump
+
+Application version 5.1.0.0
+ ... built from changelist 0
+
+OS version Linux 5.15.0-56-generic (network name: Abel)
+Running 10 x86_64 processors (20 logical cores)
+Exception was "UAssetEditorSubsystem::OpenEditorForAsset"
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-Core.so!ThreadStackWalker(int, siginfo_t*, void*) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./Runtime/Core/Private/Unix/UnixPlatformCrashContext.cpp:1034]
+libc.so.6!UnknownFunction(0x4251f)
+libc.so.6!clock_nanosleep(+0xc7)
+libc.so.6!__nanosleep(+0x16)
+libc.so.6!usleep(+0x4e)
+libUnrealEditor-Core.so!FGenericPlatformProcess::Sleep(float) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./Runtime/Core/Private/GenericPlatform/GenericPlatformProcess.cpp:354]
+libUnrealEditor-Engine.so!FCardRepresentationAsyncQueue::BlockUntilAllBuildsComplete() [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./Runtime/Engine/Private/MeshCardRepresentation.cpp:631]
+libUnrealEditor-Engine.so!FAssetCompilingManager::FinishAllCompilation() [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./Runtime/Engine/Private/AssetCompilingManager.cpp:384]
+libUnrealEditor-UnrealEd.so!UPackageTools::UnloadPackages(TArray<UPackage*, TSizedDefaultAllocator<32> > const&, FText&, bool) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./Editor/UnrealEd/Private/PackageTools.cpp:439]
+libUnrealEditor-UnrealEd.so!UPackageTools::UnloadPackages(TArray<UPackage*, TSizedDefaultAllocator<32> > const&) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./Editor/UnrealEd/Private/PackageTools.cpp:322]
+libUnrealEditor-UnrealEd.so!UEditorEngine::Map_Load(char16_t const*, FOutputDevice&) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./Editor/UnrealEd/Private/EditorServer.cpp:2592]
+libUnrealEditor-UnrealEd.so!UEditorEngine::HandleMapCommand(char16_t const*, FOutputDevice&, UWorld*) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./Editor/UnrealEd/Private/EditorServer.cpp:6232]
+libUnrealEditor-UnrealEd.so!UEditorEngine::Exec(UWorld*, char16_t const*, FOutputDevice&) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./Editor/UnrealEd/Private/EditorServer.cpp:5749]
+libUnrealEditor-UnrealEd.so!UUnrealEdEngine::Exec(UWorld*, char16_t const*, FOutputDevice&) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./Editor/UnrealEd/Private/UnrealEdSrv.cpp:659]
+libUnrealEditor-UnrealEd.so!FEditorFileUtils::LoadMap(FString const&, bool, bool) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./Editor/UnrealEd/Private/FileHelpers.cpp:2849]
+libUnrealEditor-AssetTools.so!FAssetTypeActions_World::OpenAssetEditor(TArray<UObject*, TSizedDefaultAllocator<32> > const&, TSharedPtr<IToolkitHost, (ESPMode)1>) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./Developer/AssetTools/Private/AssetTypeActions/AssetTypeActions_World.cpp:46]
+libUnrealEditor-UnrealEd.so!UAssetEditorSubsystem::OpenEditorForAsset(UObject*, EToolkitMode::Type, TSharedPtr<IToolkitHost, (ESPMode)1>, bool) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./Editor/UnrealEd/Private/Subsystems/AssetEditorSubsystem.cpp:402]
+libUnrealEditor-UnrealEd.so!UAssetEditorSubsystem::OpenEditorForAssets_Advanced(TArray<UObject*, TSizedDefaultAllocator<32> > const&, EToolkitMode::Type, TSharedPtr<IToolkitHost, (ESPMode)1>) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./Editor/UnrealEd/Private/Subsystems/AssetEditorSubsystem.cpp:476]
+libUnrealEditor-UnrealEd.so!UAssetEditorSubsystem::OpenEditorForAssets(TArray<UObject*, TSizedDefaultAllocator<32> > const&) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./Editor/UnrealEd/Private/Subsystems/AssetEditorSubsystem.cpp:591]
+libUnrealEditor-ContentBrowserAssetDataSource.so!ContentBrowserAssetData::EditOrPreviewAssetFileItems(TArrayView<TSharedRef<FContentBrowserAssetFileItemDataPayload const, (ESPMode)1> const, int>, bool) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./../Plugins/Editor/ContentBrowser/ContentBrowserAssetDataSource/Source/ContentBrowserAssetDataSource/Private/ContentBrowserAssetDataCore.cpp:288]
+libUnrealEditor-ContentBrowserAssetDataSource.so!ContentBrowserAssetData::EditOrPreviewItems(IAssetTools*, UContentBrowserDataSource const*, TArrayView<FContentBrowserItemData const, int>, bool) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./../Plugins/Editor/ContentBrowser/ContentBrowserAssetDataSource/Source/ContentBrowserAssetDataSource/Private/ContentBrowserAssetDataCore.cpp:308]
+libUnrealEditor-ContentBrowser.so!SContentBrowser::OnItemsActivated(TArrayView<FContentBrowserItem const, int>, EAssetTypeActivationMethod::Type) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./Editor/ContentBrowser/Private/SContentBrowser.cpp:3020]
+libUnrealEditor-ContentBrowser.so!TBaseSPMethodDelegateInstance<false, SContentBrowser, (ESPMode)1, void (TArrayView<FContentBrowserItem const, int>, EAssetTypeActivationMethod::Type), FDefaultDelegateUserPolicy>::Execute(TArrayView<FContentBrowserItem const, int>, EAssetTypeActivationMethod::Type) const [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:295]
+libUnrealEditor-ContentBrowser.so!TBaseSPMethodDelegateInstance<false, SAssetView, (ESPMode)1, void (TSharedPtr<FAssetViewItem, (ESPMode)1>), FDefaultDelegateUserPolicy>::ExecuteIfSafe(TSharedPtr<FAssetViewItem, (ESPMode)1>) const [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:312]
+libUnrealEditor-ContentBrowser.so!non-virtual thunk to SListView<TSharedPtr<FAssetViewItem, (ESPMode)1> >::Private_OnItemDoubleClicked(TSharedPtr<FAssetViewItem, (ESPMode)1>) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/Runtime/Slate/Public/Widgets/Views/SListView.h:0]
+libUnrealEditor-ContentBrowser.so!STableRow<TSharedPtr<FAssetViewItem, (ESPMode)1> >::OnMouseButtonDoubleClick(FGeometry const&, FPointerEvent const&) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/Runtime/Slate/Public/Widgets/Views/STableRow.h:422]
+libUnrealEditor-ContentBrowser.so!non-virtual thunk to STableRow<TSharedPtr<FAssetViewItem, (ESPMode)1> >::OnMouseButtonDoubleClick(FGeometry const&, FPointerEvent const&) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/Runtime/Slate/Public/Widgets/Views/STableRow.h:0]
+libUnrealEditor-Slate.so!FSlateApplication::RoutePointerDoubleClickEvent(FWidgetPath const&, FPointerEvent const&) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5526]
+libUnrealEditor-Slate.so!FSlateApplication::ProcessMouseButtonDoubleClickEvent(TSharedPtr<FGenericWindow, (ESPMode)1> const&, FPointerEvent const&) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5509]
+libUnrealEditor-Slate.so!FSlateApplication::OnMouseDoubleClick(TSharedPtr<FGenericWindow, (ESPMode)1> const&, EMouseButtons::Type, UE::Math::TVector2<double>) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5474]
+libUnrealEditor-ApplicationCore.so!FLinuxApplication::ProcessDeferredMessage(SDL_Event) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./Runtime/ApplicationCore/Private/Linux/LinuxApplication.cpp:437]
+libUnrealEditor-ApplicationCore.so!FLinuxPlatformApplicationMisc::PumpMessages(bool) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./Runtime/ApplicationCore/Private/Linux/LinuxPlatformApplicationMisc.cpp:436]
+UnrealEditor!FEngineLoop::Tick() [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:5285]
+UnrealEditor!GuardedMain(char16_t const*) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/./Runtime/Launch/Private/Launch.cpp:204]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/home/meeshkan-abel/mike/unreal/UnrealEngine-5.1.0-release/Engine/Source/Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:269]
+libc.so.6!UnknownFunction(0x29d8f)
+libc.so.6!__libc_start_main(+0x7f)
+UnrealEditor!_start()
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!
